@@ -1,4 +1,4 @@
-# DocSearch scraper
+# DocSearch scraper webhook
 
 This repository holds the code of the DocSearch scraper used to power the hosted
 version of DocSearch.
@@ -6,6 +6,15 @@ version of DocSearch.
 If you're looking for a way to add DocSearch to your site, the easiest solution
 is to [apply to DocSearch][1]. To run the scraper yourself, you're at the right
 place.
+
+## Webhook usage
+
+Deploy the application
+
+Set `APPLICATION_ID` and `API_KEY` environment variables and update `docsearch.config.json` according to your Algolia app
+
+Follow instructions on [using webhooks](https://docs.readthedocs.io/en/stable/guides/build-notifications.html#using-webhook) in the docsearch docs to add `<deployed_webhook_url>/run-docsearch-index` to enable running docsearch scraper on successful builds 
+
 
 ## Installation and Usage
 
